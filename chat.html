@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <meta name="theme-color" content="#fcfdff" />
+    <meta name="description" content="My Orbit 2026 — Future Explorers Academy" />
+    <title>Chat · Future Explorers Academy</title>
+    <link rel="icon" href="https://serti-static.s3.us-east-1.amazonaws.com/MyOrbit/assets/img/logo.png" />
+    <link rel="stylesheet" href="https://serti-static.s3.us-east-1.amazonaws.com/MyOrbit/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="https://serti-static.s3.us-east-1.amazonaws.com/MyOrbit/css/main.min.css" />
+    <script src="js/app.js" defer></script>
+    <script src="js/vendor/sweetalert2.all.min.js" defer></script>
+  </head>
+  <body class="">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="app theme-chat">
+      <div class="shell">
+        <header class="page-header">
+          <a class="icon-button" href="index.html" aria-label="Go back"
+            ><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#back"></use></svg
+          ></a>
+          <div class="header-title"><h1>Chat</h1></div>
+          <button
+            type="button"
+            class="icon-button primary"
+            data-action="new-conversation"
+            aria-label="New conversation"
+          >
+            <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#plus"></use></svg>
+          </button>
+        </header>
+        <main class="main reading" id="main">
+          <label class="search" for="chat-search"
+            ><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#search"></use></svg
+            ><span class="sr-only">Search conversations</span
+            ><input
+              type="search"
+              id="chat-search"
+              placeholder="Search conversations…"
+              data-filter
+              autocomplete="off"
+          /></label>
+          <p class="sr-only" data-filter-status role="status"></p>
+          <ul class="conversation-list" data-filter-list>
+            <li data-search-item data-contact-id="blues">
+              <a
+                href="conversation.html?contact=blues"
+                class="contact-card panel"
+                aria-label="Open conversation. Blues Peralta"
+                ><img
+                  src="assets/img/blues.webp"
+                  alt="Blues Peralta"
+                  class="avatar"
+                  decoding="async" />
+                <div class="contact-copy">
+                  <div class="contact-heading">
+                    <h2>Blues Peralta</h2>
+                    <time data-conversation-time datetime="2026-08-30"></time>
+                  </div>
+                  <p>Teacher</p>
+                  <p data-conversation-preview>Start a conversation</p>
+                </div>
+                <span class="chevron"
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="assets/icons.svg#chevron-right"></use></svg></span
+              ></a>
+            </li>
+            <li data-search-item data-contact-id="christopher">
+              <a
+                href="conversation.html?contact=christopher"
+                class="contact-card panel"
+                aria-label="Open conversation. Christopher Posada"
+                ><img
+                  src="assets/img/christopher.webp"
+                  alt="Christopher Posada"
+                  class="avatar"
+                  decoding="async" />
+                <div class="contact-copy">
+                  <div class="contact-heading">
+                    <h2>Christopher Posada</h2>
+                    <time data-conversation-time datetime="2026-08-30"></time>
+                  </div>
+                  <p>Teacher</p>
+                  <p data-conversation-preview>Start a conversation</p>
+                </div>
+                <span class="chevron"
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="assets/icons.svg#chevron-right"></use></svg></span
+              ></a>
+            </li>
+            <li data-search-item data-contact-id="margaret">
+              <a
+                href="conversation.html?contact=margaret"
+                class="contact-card panel"
+                aria-label="Open conversation. Margaret Madariaga"
+                ><img
+                  src="assets/img/margaret.webp"
+                  alt="Margaret Madariaga"
+                  class="avatar"
+                  decoding="async" />
+                <div class="contact-copy">
+                  <div class="contact-heading">
+                    <h2>Margaret Madariaga</h2>
+                    <time data-conversation-time datetime="2026-07-28">07/28/2026</time>
+                  </div>
+                  <p>Teacher</p>
+                  <p data-conversation-preview>Thank you!</p>
+                </div>
+                <span class="chevron"
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="assets/icons.svg#chevron-right"></use></svg></span
+              ></a>
+            </li>
+            <li data-search-item data-contact-id="brookiney">
+              <a
+                href="conversation.html?contact=brookiney"
+                class="contact-card panel"
+                aria-label="Open conversation. Brookiney Diao"
+                ><img
+                  src="assets/img/brookiney.webp"
+                  alt="Brookiney Diao"
+                  class="avatar"
+                  decoding="async" />
+                <div class="contact-copy">
+                  <div class="contact-heading">
+                    <h2>Brookiney Diao</h2>
+                    <time data-conversation-time datetime="2026-06-28"></time>
+                  </div>
+                  <p>Teacher</p>
+                  <p data-conversation-preview>Start a conversation</p>
+                </div>
+                <span class="chevron"
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="assets/icons.svg#chevron-right"></use></svg></span
+              ></a>
+            </li>
+          </ul>
+          <p class="chat-list-empty panel" data-filter-empty hidden>No conversations found.</p>
+        </main>
+      </div>
+    </div>
+    <nav class="navbar-bottom" aria-label="Main navigation">
+      <ul>
+        <li>
+          <a class="nav-link" href="index.html"
+            ><span class="badged"
+              ><svg class="icon" aria-hidden="true">
+                <use href="assets/icons.svg#home"></use></svg></span
+            ><span>Home</span></a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="qr.html"
+            ><span class="badged"
+              ><svg class="icon" aria-hidden="true">
+                <use href="assets/icons.svg#qr"></use></svg></span
+            ><span>My QR</span></a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="chat.html" aria-current="page"
+            ><span class="badged"
+              ><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#chat"></use></svg
+              ><span class="notification-count" aria-label="2 unread messages">2</span></span
+            ><span>Messages</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <script id="chat-data" type="application/json">
+      {
+        "parentName": "Christopher Miller",
+        "parentAvatar": "assets/img/christopher.webp",
+        "contacts": [
+          {
+            "id": "blues",
+            "name": "Blues Peralta",
+            "role": "Teacher",
+            "avatar": "assets/img/blues.webp"
+          },
+          {
+            "id": "christopher",
+            "name": "Christopher Posada",
+            "role": "Teacher",
+            "avatar": "assets/img/christopher.webp"
+          },
+          {
+            "id": "margaret",
+            "name": "Margaret Madariaga",
+            "role": "Teacher",
+            "avatar": "assets/img/margaret.webp"
+          },
+          {
+            "id": "brookiney",
+            "name": "Brookiney Diao",
+            "role": "Teacher",
+            "avatar": "assets/img/brookiney.webp"
+          }
+        ]
+      }
+    </script>
+    <script src="js/chat.js" defer></script>
+  </body>
+</html>

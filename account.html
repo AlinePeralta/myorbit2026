@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <meta name="theme-color" content="#fcfdff" />
+    <meta name="description" content="My Orbit 2026 — Future Explorers Academy" />
+    <title>Account information · Future Explorers Academy</title>
+    <link rel="icon" href="https://serti-static.s3.us-east-1.amazonaws.com/MyOrbit/assets/img/logo.png" />
+    <link rel="stylesheet" href="https://serti-static.s3.us-east-1.amazonaws.com/MyOrbit/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="https://serti-static.s3.us-east-1.amazonaws.com/MyOrbit/css/main.min.css" />
+    <script src="js/app.js" defer></script>
+  </head>
+  <body class="family--single">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="app theme-flows">
+      <div class="shell">
+        <main class="main account-main" id="main">
+          <header class="profile-hero account-hero">
+            <a class="icon-button profile-back" href="index.html" aria-label="Back to home"
+              ><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#back"></use></svg
+            ></a>
+            <div class="account-photo">
+              <img
+                src="assets/img/christopher.webp"
+                alt="Christopher Miller"
+                class="avatar"
+                decoding="async"
+              /><button
+                type="button"
+                class="icon-button primary account-photo-button"
+                data-action="change-photo"
+                aria-disabled="true"
+                aria-label="Change profile photo"
+              >
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons.svg#camera"></use>
+                </svg>
+              </button>
+            </div>
+            <h1>Christopher Miller</h1>
+            <p>Parent / Guardian</p>
+          </header>
+          <section class="account-children" aria-labelledby="children-title">
+            <h2 id="children-title">
+              <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#people"></use></svg>
+              My children
+            </h2>
+            <div class="account-child-list">
+              <a class="account-child" href="profile.html?child=emilia" data-account-child="emilia"
+                ><img src="assets/img/emilia.webp" alt="" class="avatar" decoding="async" /><span
+                  ><strong>Emilia</strong><span class="muted">Older 2s</span></span
+                ></a
+              >
+            </div>
+          </section>
+          <div class="account-logout">
+            <button
+              type="button"
+              class="button-primary"
+              data-action="log-out"
+              aria-disabled="true"
+              aria-label="Log out"
+            >
+              <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#logout"></use></svg>
+              Log Out
+            </button>
+          </div>
+        </main>
+      </div>
+    </div>
+    <nav class="navbar-bottom" aria-label="Main navigation">
+      <ul>
+        <li>
+          <a class="nav-link" href="index.html" aria-current="page"
+            ><span class="badged"
+              ><svg class="icon" aria-hidden="true">
+                <use href="assets/icons.svg#home"></use></svg></span
+            ><span>Home</span></a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="qr.html"
+            ><span class="badged"
+              ><svg class="icon" aria-hidden="true">
+                <use href="assets/icons.svg#qr"></use></svg></span
+            ><span>My QR</span></a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="chat.html"
+            ><span class="badged"
+              ><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#chat"></use></svg
+              ><span class="notification-count" aria-label="2 unread messages">2</span></span
+            ><span>Messages</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <script id="family-data" type="application/json">
+      {
+        "activeIds": ["emilia"],
+        "selectedId": "emilia",
+        "parent": { "name": "Christopher Miller", "role": "Parent / Guardian" },
+        "children": [
+          {
+            "id": "emilia",
+            "name": "Emilia Madariaga",
+            "shortName": "Emilia",
+            "group": "Older 2s",
+            "avatar": "assets/img/emilia.webp",
+            "checkedIn": true,
+            "checkInTime": "8:12 AM",
+            "gallery": [
+              "assets/img/activity-1.webp",
+              "assets/img/activity-2.webp",
+              "assets/img/activity-3.webp"
+            ]
+          }
+        ],
+        "allChildren": [
+          {
+            "id": "emilia",
+            "name": "Emilia Madariaga",
+            "shortName": "Emilia",
+            "group": "Older 2s",
+            "avatar": "assets/img/emilia.webp",
+            "checkedIn": true,
+            "checkInTime": "8:12 AM",
+            "gallery": [
+              "assets/img/activity-1.webp",
+              "assets/img/activity-2.webp",
+              "assets/img/activity-3.webp"
+            ]
+          },
+          {
+            "id": "mateo",
+            "name": "Mateo Madariaga",
+            "shortName": "Mateo",
+            "group": "Older 5s",
+            "avatar": "assets/img/mateo.webp",
+            "checkedIn": true,
+            "checkInTime": "8:12 AM",
+            "gallery": ["assets/img/activity-family.webp"]
+          },
+          {
+            "id": "sofia",
+            "name": "Sofía Madariaga",
+            "shortName": "Sofía",
+            "group": "Older 2s",
+            "avatar": "assets/img/sofia.webp",
+            "checkedIn": true,
+            "checkInTime": "8:12 AM",
+            "gallery": ["assets/img/activity-family.webp"]
+          }
+        ]
+      }
+    </script>
+    <script src="js/family.js" defer></script>
+  </body>
+</html>

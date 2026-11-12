@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <meta name="theme-color" content="#fcfdff" />
+    <meta name="description" content="My Orbit 2026 — Future Explorers Academy" />
+    <title>Payment · Future Explorers Academy</title>
+    <link rel="icon" href="https://serti-static.s3.us-east-1.amazonaws.com/MyOrbit/assets/img/logo.png" />
+    <link rel="stylesheet" href="https://serti-static.s3.us-east-1.amazonaws.com/MyOrbit/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="https://serti-static.s3.us-east-1.amazonaws.com/MyOrbit/css/main.min.css" />
+    <script src="js/app.js" defer></script>
+  </head>
+  <body class="">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="app theme-flows">
+      <div class="shell payment-shell">
+        <header class="page-header payment-page-header">
+          <a class="icon-button" href="payments.html" aria-label="Back to Payments"
+            ><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#back"></use></svg
+          ></a>
+          <div class="header-title"><h1>Payment</h1></div>
+          <span aria-hidden="true"></span>
+        </header>
+        <main class="main reading payment-preview" id="main">
+          <section class="payment-card panel" aria-labelledby="payment-amount">
+            <div class="payment-heading">
+              <span class="payment-amount-icon"
+                ><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#card"></use></svg
+              ></span>
+              <div>
+                <span>Amount to pay</span>
+                <h2 id="payment-amount">$1.00</h2>
+              </div>
+            </div>
+            <div class="payment-content">
+              <div class="payment-summary">
+                <div>
+                  <label for="payment-name">Name</label
+                  ><input id="payment-name" value="test lasttest" />
+                </div>
+                <div>
+                  <label for="payment-email">Email Address</label
+                  ><input id="payment-email" value="nombre_123@correo.com" />
+                </div>
+              </div>
+              <div class="payment-methods" aria-label="Payment method">
+                <button
+                  class="payment-method is-selected"
+                  type="button"
+                  aria-label="Tarjeta, seleccionada"
+                >
+                  <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#card"></use></svg
+                  ><span>Tarjeta</span
+                  ><span class="method-check" aria-hidden="true">✓</span></button
+                ><button class="payment-method" type="button">
+                  <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#bank"></use></svg
+                  ><span>Banco</span><span class="method-radio" aria-hidden="true"></span>
+                </button>
+              </div>
+              <p class="link-heading">
+                <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#lock"></use></svg>
+                <span>Proceso de compra rápido y seguro con link</span>
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons.svg#chevron-down"></use>
+                </svg>
+              </p>
+              <form class="payment-form" autocomplete="off" onsubmit="return false">
+                <div class="payment-field">
+                  <label for="card-number"
+                    ><svg class="icon" aria-hidden="true">
+                      <use href="assets/icons.svg#card"></use>
+                    </svg>
+                    Número de tarjeta</label
+                  ><input id="card-number" placeholder="1234 1234 1234 1234" inputmode="numeric" />
+                </div>
+                <div class="payment-pair">
+                  <div class="payment-field">
+                    <label for="expiry"
+                      ><svg class="icon" aria-hidden="true">
+                        <use href="assets/icons.svg#calendar"></use>
+                      </svg>
+                      Fecha de vencimiento</label
+                    ><input id="expiry" placeholder="MM/ AA" />
+                  </div>
+                  <div class="payment-field">
+                    <label for="security"
+                      ><svg class="icon" aria-hidden="true">
+                        <use href="assets/icons.svg#lock"></use>
+                      </svg>
+                      Código de seguridad</label
+                    ><input id="security" placeholder="CVC" />
+                  </div>
+                </div>
+                <div class="payment-field">
+                  <label for="country"
+                    ><svg class="icon" aria-hidden="true">
+                      <use href="assets/icons.svg#pin"></use>
+                    </svg>
+                    País</label
+                  ><select id="country">
+                    <option>México</option>
+                  </select>
+                </div>
+                <section class="payment-optional" aria-labelledby="optional-title">
+                  <span class="optional-tag">Opcional</span>
+                  <h3 id="optional-title">
+                    Guardar mis datos para un proceso de compra más rápido
+                  </h3>
+                  <div class="payment-field">
+                    <label for="link-email">Correo electrónico</label
+                    ><input id="link-email" type="email" placeholder="nombre_123@correo.com" />
+                  </div>
+                  <div class="payment-field">
+                    <label for="link-phone">Número de celular</label>
+                    <div class="payment-phone">
+                      <span aria-label="Código de México"
+                        >🇲🇽 +52
+                        <svg class="icon" aria-hidden="true">
+                          <use href="assets/icons.svg#chevron-down"></use></svg></span
+                      ><input id="link-phone" type="tel" placeholder="222 123 2345" />
+                    </div>
+                  </div>
+                  <div class="payment-field">
+                    <label for="link-name">Nombre completo</label
+                    ><input id="link-name" placeholder="Nombre y apellido" />
+                  </div>
+                </section>
+                <p class="payment-terms">
+                  Link - Si proporcionas tu número de teléfono y correo electrónico, aceptas crear
+                  una cuenta sujeta a las <span>Condiciones</span> y la
+                  <span>Política de privacidad</span> de Link.
+                </p>
+                <button class="button-primary payment-submit" type="button">Pay</button>
+              </form>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <nav class="navbar-bottom payment-navbar" aria-label="Main navigation">
+      <ul>
+        <li>
+          <a class="nav-link" href="index.html"
+            ><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#home"></use></svg
+            ><span>Home</span></a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="qr.html"
+            ><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#qr"></use></svg
+            ><span>My QR</span></a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="chat.html"
+            ><span class="badged"
+              ><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#chat"></use></svg
+              ><span class="payment-notification-dot" aria-label="2 unread messages"></span></span
+            ><span>Messages</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

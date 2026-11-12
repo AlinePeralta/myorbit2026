@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <meta name="theme-color" content="#fcfdff" />
+    <meta name="description" content="My Orbit 2026 — Future Explorers Academy" />
+    <title>Pick up · Future Explorers Academy</title>
+    <link rel="icon" href="https://serti-static.s3.us-east-1.amazonaws.com/MyOrbit/assets/img/logo.png" />
+    <link rel="stylesheet" href="https://serti-static.s3.us-east-1.amazonaws.com/MyOrbit/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="https://serti-static.s3.us-east-1.amazonaws.com/MyOrbit/css/main.min.css" />
+    <script src="js/app.js" defer></script>
+    <script src="js/pickup.js" defer></script>
+  </head>
+  <body class="family--multiple">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="app theme-flows">
+      <div class="shell">
+        <header class="page-header">
+          <a class="icon-button" href="index-multiple.html" aria-label="Go back"
+            ><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#back"></use></svg
+          ></a>
+          <div class="header-title"><h1>Pick up</h1></div>
+          <span aria-hidden="true"></span>
+        </header>
+        <main class="main reading flow-main" id="main">
+          <div class="pickup-single-child">
+            <a class="child-card" href="profile.html"
+              ><img
+                data-child-avatar
+                src="assets/img/emilia.webp"
+                alt="Emilia Madariaga"
+                class="avatar"
+                decoding="async" />
+              <div class="child-copy">
+                <h2 data-child-name>Emilia Madariaga</h2>
+                <p class="muted" data-child-group>Older 2s</p>
+                <div class="status-line">
+                  <span class="status">✓ Checked In</span><span class="status">8:12 AM</span>
+                </div>
+              </div>
+              <span class="chevron"
+                ><svg class="icon" aria-hidden="true">
+                  <use href="assets/icons.svg#chevron-right"></use></svg></span
+            ></a>
+          </div>
+          <section
+            class="children-strip children-strip--all"
+            aria-label="Children included in pickup"
+            data-family-all
+          >
+            <div class="child-option" data-child-id="emilia">
+              <img src="assets/img/emilia.webp" alt="" class="avatar" /><strong>Emilia</strong>
+            </div>
+            <div class="child-option" data-child-id="mateo">
+              <img src="assets/img/mateo.webp" alt="" class="avatar" /><strong>Mateo</strong>
+            </div>
+            <div class="child-option" data-child-id="sofia">
+              <img src="assets/img/sofia.webp" alt="" class="avatar" /><strong>Sofía</strong>
+            </div>
+          </section>
+          <section class="pickup-card panel" aria-labelledby="pickup-title">
+            <div class="pickup-heading">
+              <span class="flow-icon"
+                ><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#car"></use></svg
+              ></span>
+              <div>
+                <h2 id="pickup-title">Select pickup time</h2>
+                <p class="pickup-initial-copy">Estimated time of arrival</p>
+                <p class="pickup-scope" data-pickup-scope></p>
+              </div>
+            </div>
+            <div class="time-field">
+              <label for="pickup-time" id="pickup-placeholder">Select</label
+              ><input
+                type="time"
+                id="pickup-time"
+                name="pickup-time"
+                aria-label="Select pickup time"
+              /><svg class="icon" aria-hidden="true">
+                <use href="assets/icons.svg#chevron-down"></use>
+              </svg>
+            </div>
+          </section>
+          <section
+            class="pickup-result panel"
+            id="pickup-result"
+            aria-live="polite"
+            aria-atomic="true"
+            hidden
+          >
+            <span class="flow-icon"
+              ><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#clock"></use></svg
+            ></span>
+            <div>
+              <h2>Pickup at:</h2>
+              <p><time id="pickup-value"></time></p>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <nav class="navbar-bottom" aria-label="Main navigation">
+      <ul>
+        <li>
+          <a class="nav-link" href="index.html" aria-current="page"
+            ><span class="badged"
+              ><svg class="icon" aria-hidden="true">
+                <use href="assets/icons.svg#home"></use></svg></span
+            ><span>Home</span></a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="qr.html"
+            ><span class="badged"
+              ><svg class="icon" aria-hidden="true">
+                <use href="assets/icons.svg#qr"></use></svg></span
+            ><span>My QR</span></a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="chat.html"
+            ><span class="badged"
+              ><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#chat"></use></svg
+              ><span class="notification-count" aria-label="2 unread messages">2</span></span
+            ><span>Messages</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <script id="family-data" type="application/json">
+      {
+        "activeIds": ["emilia"],
+        "selectedId": "emilia",
+        "parent": { "name": "Christopher Miller", "role": "Parent / Guardian" },
+        "children": [
+          {
+            "id": "emilia",
+            "name": "Emilia Madariaga",
+            "shortName": "Emilia",
+            "group": "Older 2s",
+            "avatar": "assets/img/emilia.webp",
+            "checkedIn": true,
+            "checkInTime": "8:12 AM",
+            "gallery": [
+              "assets/img/activity-1.webp",
+              "assets/img/activity-2.webp",
+              "assets/img/activity-3.webp"
+            ]
+          },
+          {
+            "id": "mateo",
+            "name": "Mateo Madariaga",
+            "shortName": "Mateo",
+            "group": "Older 5s",
+            "avatar": "assets/img/mateo.webp",
+            "checkedIn": true,
+            "checkInTime": "8:12 AM",
+            "gallery": ["assets/img/activity-family.webp"]
+          },
+          {
+            "id": "sofia",
+            "name": "Sofía Madariaga",
+            "shortName": "Sofía",
+            "group": "Older 2s",
+            "avatar": "assets/img/sofia.webp",
+            "checkedIn": true,
+            "checkInTime": "8:12 AM",
+            "gallery": ["assets/img/activity-family.webp"]
+          }
+        ],
+        "allChildren": [
+          {
+            "id": "emilia",
+            "name": "Emilia Madariaga",
+            "shortName": "Emilia",
+            "group": "Older 2s",
+            "avatar": "assets/img/emilia.webp",
+            "checkedIn": true,
+            "checkInTime": "8:12 AM",
+            "gallery": [
+              "assets/img/activity-1.webp",
+              "assets/img/activity-2.webp",
+              "assets/img/activity-3.webp"
+            ]
+          },
+          {
+            "id": "mateo",
+            "name": "Mateo Madariaga",
+            "shortName": "Mateo",
+            "group": "Older 5s",
+            "avatar": "assets/img/mateo.webp",
+            "checkedIn": true,
+            "checkInTime": "8:12 AM",
+            "gallery": ["assets/img/activity-family.webp"]
+          },
+          {
+            "id": "sofia",
+            "name": "Sofía Madariaga",
+            "shortName": "Sofía",
+            "group": "Older 2s",
+            "avatar": "assets/img/sofia.webp",
+            "checkedIn": true,
+            "checkInTime": "8:12 AM",
+            "gallery": ["assets/img/activity-family.webp"]
+          }
+        ]
+      }
+    </script>
+    <script src="js/family.js" defer></script>
+  </body>
+</html>
